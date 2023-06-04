@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(62, 62, 178);
+      height: 100px;
+      width: 100%;
+      top: 0;
+      position: fixed;
+
+      margin-bottom: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 23px;
+      list-style: none;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 200px;
+      margin-bottom: 20px;
+      height: 55vh;
+
+    }
+
+    .firstSection>div {
+      width: 35%;
+    }
+
+    .leftSection {
+      /* background-color: red; */
+      font-size: 2rem;
+      margin-left: 250px;
+    }
+
+    .rightSection>img {
+      border-radius: 100px;
+      box-shadow: 10px 10px 5px rgb(62, 62, 178);    
+    }
+
+    .name {
+      color: rgb(120, 87, 176);
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    nav ul li a:hover {
+      color: aqua;
+      font-size: 1.02rem;
+    }
+
+    #element {
+      color: rgb(115, 150, 216);
+    }
+
+
+    .fs-2 {
+      background-color: rgb(140, 188, 230);
+      border-radius: 10px;
+    }
+
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.75rem;
+    }
+
+    .inst {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .detail,
+    .gpa {
+      font-size: 15px;
+      list-style: none;
+      font-style: italic;
+    }
+
+    .gpa {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .badge {
+      padding: 20px;
+      margin: 20px;
+      border: 20px;
+    }
+
+    .pb-2 {
+      font-weight: bold;
+    }
+
+    .box {
+      margin: auto;
+      /* padding:100px; */
+      height: 180px;
+      margin-top: 20px;
+
+      border-radius: 20px;
+      background-color: rgba(159, 182, 202, 0.354);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .box1 {
+      margin: 0px 50px;
+      padding: 50px;
+      /* background-color: red; */
+    }
+
+    .box2 {
+      margin: 0px 50px;
+      padding: 50px;
+
+    }
+
+    .summary {
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(255, 252, 252);
+    }
+
+    #skills,
+    #projects {
+      margin-top: -100px;
+      padding-top: 80px;
+    }
+    .resume-github{
+      margin-top:10px;
+      
+    }
+
+    footer {
+      background-color: rgb(62, 62, 178);
+
+      height: 140px;
+      width: 100%;
+      padding: 10px;
+      
+    }
+
+    .footer-head {
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-list,
+    .footer-list ul li {
+      display: flex;
+      background-color: inherit;
+      list-style: none;
+
+    }
+
+    .img {
+      border-radius: 5px;
+      margin: 5px 8px;
+    }
+
+    .heading {
+      margin-left: 45px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-left: 40px;
+      margin-bottom: 0px;
+    }
+    .name1{
+      color:blanchedalmond;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Bhanu's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- <br><br><br><br><br> -->
+    <section id="home" class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <br /><span class="name">P. BHANU PRASAD</span>
+        <br />
+        I am
+        <span id="element"></span>
+        <div class = "resume-github">
+          <a href = "Bhanu Resume.pdf"
+      Download = "Bhanu's Resume" target="_blank">
+         <button type = "button" class="btn btn-light" > RESUME </button>
+      </a>
+         <a href="https://github.com/PantalaBhanuPrasad" target="_blank"> <button type="button" class="btn btn-light">GITHUB</button></a> 
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="passphoto.png" alt="" height="300px" />
+      </div>
+    </section>
+    <div id="education"><br><br><br><br></div>
+    <section id="education" class="secondSection">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Educational Experience</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="college.svg" alt="" height="40" />
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis text-muted text-bg-light p-2">Engineering Education</h3>
+
+              <ul>
+                <li class="inst">CMR Institute of Technology (Hyd)</li>
+                <li class="detail">Bachelor of Technology in CSE(AI & ML)</li>
+                <li class="gpa">CGPA: 8.98</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="inter.svg" alt="" height="30" width="30" />
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis text-bg-light p-2">Intermediate Education</h3>
+
+              <ul>
+                <li class="inst">Sri Chaitanya Jr kalasala</li>
+                <li class="detail">Intermediate (MPC)</li>
+                <li class="gpa">Percentage: 96.9</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="school.svg" alt="" height="30" width="30" />
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis text-bg-light p-2">High School Education</h3>
+
+              <ul>
+                <li class="inst">Spring's High School</li>
+                <li class="detail">Secondary Education</li>
+                <li class="gpa">GPA: 9.5</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="thirdSection">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">SKILLS</h2>
+        <div class="d-flex gap-2 justify-content-center py-5">
+
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="c.png" alt="" />C Language
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="c++.png" alt="" />C++ Language
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="java.png" alt="" />Java Language
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="html.png" alt="" />HTML
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="css.png" alt="" />CSS
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="ja.png" alt="" />JavaScript
+          </span>
+          <span
+            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+            <img class="rounded-circle me-1" width="30" height="30" src="sql.png" alt="" />SQL
+          </span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fourthSection">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">PROJECTS</h2>
+        <div class="box">
+          <div class="box1">
+            <details>
+              <summary class="summary">BLOOD BANK WEBSITE
+              </summary>
+              <p>A web-based blood bank management system featuring a user-friendly
+                homepage, donor registration form, donor-list display, and blood
+                group-based search functionality</p>
+              <a href="https://pantalabhanuprasad.github.io/bloodbank/" target="_blank"><button type="button"
+                  class="btn btn-dark" ">Click Here</button></a>
+            </details>
+
+          </div>
+          <div class=" box2">
+                  <details>
+                    <summary class="summary">SMART DUSTBIN
+                    </summary>
+                    <p>This project works on ultrasonic sensor where the lid of the trash bin
+                      will open when a person come near to it and automatically closes after
+                      5 seconds.
+                    </p>
+                  </details>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+  <footer id = "contact">
+    <div class="footer-head">
+      <h4 class="heading" style="font-weight: bold;">Bhanu's Portfolio</h4>
+      <ul class="footer-list">
+        <a href="https://www.linkedin.com/in/pantala-bhanu-prasad-67b6aa229/" target="_blank">
+          <li><img class='img' src="link.png" alt="" height="20px" width="20px"></li>
+        </a>
+        <a href="https://github.com/PantalaBhanuPrasad" target="_blank">
+          <li><img class='img' src="github.png" alt="" height="20px" width="20px"></li>
+        </a>
+        <a href="mailto:pantalabhanuprasad@gmail.com"><li><img class='img' src="mail.png" alt="" height="20px" width="20px"></li></a>
+        <a href="https://www.instagram.com/bhanu._.prasad_/" target="
+        ">
+          <li><img class='img' src="insta.jpeg" alt="" height="20px" width="20px"></li>
+        </a>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>CopyRight &copy; 2023 designed by <span class = "name1">BHANU</span></p>
+    </div>
+  </footerid>
+  </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: [
+        "a Student at <b>CMRIT</b>",
+        "and",
+        "a Passionate Web Developer",
+      ],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
