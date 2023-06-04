@@ -170,6 +170,21 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
+.projects-container {
+  border-radius: 20px;
+  background-color: rgba(159, 182, 202, 0.354);
+  height: 250px;
+  width: 100%;
+  padding: 30px;
+}
+.project-btn {
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.669);
+  color: black;
+  font-weight: bold;
+}
 footer {
   background-color: rgb(62, 62, 178);
 
